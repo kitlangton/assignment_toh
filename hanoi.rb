@@ -14,6 +14,11 @@ class Hanoi
       puts "Enter origin and destination"
       input = gets.chomp
 
+      if input == "quit"
+        puts "noooo o\n1  2  3"
+        return
+      end
+
       if input !~ /\A\d+,\d+\z/
         puts "Enter 2 numbers separated by a comma, e.g. 1,3"
         redo
